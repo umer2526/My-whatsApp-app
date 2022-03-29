@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/primary"
+    tools:context=".activities.SettingsActivity">
+
+    <ImageView
+        android:id="@+id/beckArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_back" />
+
+    <LinearLayout
+        android:id="@+id/imgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/beckArrow">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/prifileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:civ_border_color="@color/primary"
+        app:civ_border_width="1dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/user"/>
+
+    <ImageView
+        android:id="@+id/addImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_add"
+        android:layout_marginTop="-25dp"/>
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:imeOptions="actionDone"
+            android:hint="Enter your name"
+            android:background="@drawable/light_bg"
+            android:padding="10dp"
+            android:textColorHint="@color/hint"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/light_bg"
+            android:textColor="@color/text_color"
+            android:imeOptions="actionDone"
+            android:hint="Current Status"
+            android:padding="10dp"
+            android:textColorHint="@color/hint"/>
+
+    </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:text="Save"
+            android:textColor="@color/primary"
+            android:background="@drawable/save_btn_bg"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/linear_bg"
+        android:padding="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/ic_about"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/primary"
+            android:fontFamily="@font/asul_bold"
+            android:padding="8dp"
+            android:text="About Us"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/ic_privacy"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/primary"
+            android:fontFamily="@font/asul_bold"
+            android:padding="8dp"
+            android:text="Privacy Policy"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/ic_invite"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/primary"
+            android:fontFamily="@font/asul_bold"
+            android:padding="8dp"
+            android:text="Invite a Friend"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/ic_noti"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/primary"
+            android:fontFamily="@font/asul_bold"
+            android:padding="8dp"
+            android:text="Notification"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableStart="@drawable/ic_help"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/primary"
+            android:fontFamily="@font/asul_bold"
+            android:padding="8dp"
+            android:text="Help"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

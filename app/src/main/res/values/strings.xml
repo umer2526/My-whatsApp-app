@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Whats App</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="default_web_client_idd" translatable="false">632504720381-k9ruatcn9tg948f8naolq557h87f1fk6.apps.googleusercontent.com</string>
+    <string name="group_chat">Group Chat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

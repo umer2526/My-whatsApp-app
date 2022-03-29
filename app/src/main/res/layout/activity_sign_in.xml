@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:gravity="center"
+    android:background="@color/grey_background"
+    tools:context=".activities.SignInActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="24sp"/>
+
+        <ImageView
+            android:id="@+id/mainIcon"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_whatsappicon"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEmailSI"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/email"
+            android:padding="8dp"
+            android:textColorHint="@color/hint_color"
+            android:ellipsize="end"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/et_bg"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPasswordSI"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/password"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/hint_color"
+            android:ellipsize="end"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:padding="8dp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/et_bg"/>
+
+        <TextView
+            android:id="@+id/txtCreateNewAcSI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Create new Account"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignInSI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signuo_btn_bg"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:text="log in"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="18dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGoogleSI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gooogle_btn"
+                android:drawableStart="@drawable/ic_google"
+                android:textColor="@color/white"
+                android:text="google"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFacebookSI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/fb_btn"
+                android:textColor="@color/white"
+                android:drawableEnd="@drawable/ic_facebook"
+                android:text="facebook"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSignupPhoneSI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up with Phone"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
